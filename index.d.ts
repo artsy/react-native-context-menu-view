@@ -64,6 +64,10 @@ export interface ContextMenuProps extends ViewProps {
 	 */
 	preview?: React.ReactNode;
 	/**
+	 * Padding to be added to the preview view.
+	 */
+	previewPadding?: number;
+	/**
 	 * When enabled, uses iOS 14 menu mode, and shows the context menu on a single tap with no zoomed preview.
 	 */
 	dropdownMenuMode?: boolean;
