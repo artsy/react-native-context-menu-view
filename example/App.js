@@ -73,6 +73,7 @@ const App = () => {
             title: 'Test Item',
           },
         ]}
+        previewPadding={30}
         previewBackgroundColor="transparent"
         preview={<View style={[styles.rectangle, { backgroundColor: 'green' }]} />}>
         <View style={[styles.rectangle, { backgroundColor: 'red' }]} />
