@@ -104,8 +104,15 @@
     UIPreviewTarget* previewTarget = [[UIPreviewTarget alloc] initWithContainer:self center:self.reactSubviews.firstObject.center];
     UIPreviewParameters* previewParams = [[UIPreviewParameters alloc] init];
 
+
     if (_previewBackgroundColor != nil) {
       previewParams.backgroundColor = _previewBackgroundColor;
+    }
+
+    if (_hideShadows) {
+      // Pass an empty bezier path
+      // a nil path will just use visible path instead
+      previewParams.shadowPath = [UIBezierPath bezierPath];
     }
 
     UIView *originalSubview = self.reactSubviews.firstObject;
