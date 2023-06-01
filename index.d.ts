@@ -64,7 +64,7 @@ export interface ContextMenuProps extends ViewProps {
 	 */
 	preview?: React.ReactNode;
 	/**
-	 * Padding to be added to the preview view.
+	 * Currently iOS only. Padding to be added to the preview view.
 	 */
 	previewPadding?: number;
 	/**
@@ -75,6 +75,10 @@ export interface ContextMenuProps extends ViewProps {
 	 * Currently iOS only. Disable menu interaction
 	 */
 	disabled?: boolean;
+	/**
+	 * Currently iOS only. Hide the drop shadow on the menu
+	 */
+	hideShadows?: boolean;
 	/**
 	 * Children prop as per upgrade docs: https://reactjs.org/blog/2022/03/08/react-18-upgrade-guide.html#updates-to-typescript-definitions
 	 */
