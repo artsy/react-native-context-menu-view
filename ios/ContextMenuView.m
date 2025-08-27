@@ -34,7 +34,7 @@
 
 - (void)insertReactSubview:(UIView *)subview atIndex:(NSInteger)atIndex
 {
-  if ([subview.nativeID isEqualToString:@"ContextMenuPreview"]) {
+  if ([subview.accessibilityLabel isEqualToString:@"ContextMenuPreview"] || [subview.nativeID isEqualToString:@"ContextMenuPreview"]) {
     _customView = subview;
     return;
   }

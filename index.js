@@ -8,7 +8,7 @@ const ContextMenu = (props) => {
     <NativeContextMenu {...props}>
       {props.children}
       {props.preview != null && Platform.OS === 'ios' ? (
-        <View style={styles.preview} nativeID="ContextMenuPreview">{props.preview}</View>
+        <View style={styles.preview} nativeID="ContextMenuPreview" accessibilityLabel="ContextMenuPreview">{props.preview}</View>
       ) : null}
     </NativeContextMenu>
   );
